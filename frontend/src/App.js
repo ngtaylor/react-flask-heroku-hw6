@@ -24,7 +24,7 @@ function App() {
   return (
     <div>
     <form onSubmit = {handleSubmit}>
-            <p>Enter User First Name: </p>
+            <p>Enter User First Name:</p>
             <input onChange = {(e) => setName(e.target.value)} value = {name}></input>
             <button type = 'submit'>Click to submit</button>
     </form>
