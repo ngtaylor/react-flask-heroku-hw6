@@ -8,7 +8,7 @@ from flask.helpers import send_from_directory
 #from flask_cors import  CORS
 
 names = {
-    "Nick" : "Taylor",
+    "Nicholas" : "Taylor",
     "Bob" : "Ross",
     "Peter" : "Parker"
 }
@@ -30,5 +30,5 @@ def index():
     return send_from_directory(app.static_folder, "index.html")
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
     
